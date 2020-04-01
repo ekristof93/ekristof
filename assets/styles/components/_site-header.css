@@ -1,0 +1,38 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba($basicDarkColor, 0.8);
+  height: 6rem;
+
+  &--get-fixed {
+    position: fixed;
+    background-color: rgba($basicDarkColor, 0.7);
+  }
+
+  @mixin atMedium {
+    position: absolute;
+    top: 0;
+    height: auto;
+  }
+
+  &--admin-logged-in {
+      top: 32px;
+
+    @mixin atMedium {
+      top: 46px;
+    }
+  }
+
+  &__menu-content {
+
+    @mixin atMedium {
+      display: none;
+    }
+
+    &--is-visible {
+      display: block;
+    }
+  }
+}

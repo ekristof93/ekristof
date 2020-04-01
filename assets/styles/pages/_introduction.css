@@ -1,0 +1,5 @@
+.introduction {
+    &__image {
+        box-shadow: 0 1.5rem 4rem rgba($black, 0.5);
+    }
+}

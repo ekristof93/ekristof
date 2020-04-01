@@ -1,0 +1,13 @@
+.posts {
+  &__item {
+    background-color: $white;
+    color: $basicDarkColor;
+    height: 40rem;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+  }
+
+  &__text {
+    padding: 1.6rem 1.6rem;
+    margin: 0;
+  }
+}

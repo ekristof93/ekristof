@@ -1,0 +1,28 @@
+.post {
+  @mixin clearfix;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+  
+  background-color: $white;
+  padding: 1.6rem;
+  margin: 1.6rem 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__info {
+    font-size: 1.3rem;
+  }
+
+  &__info-link {
+    font-weight: 700;
+  }
+
+  &__thumbnail {
+    margin: 0 -1.6rem;
+  }
+
+  &__edit {
+    float: right;
+  }
+}

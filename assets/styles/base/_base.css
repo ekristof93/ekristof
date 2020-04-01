@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-size: 62.5%; /* 1rem = 10px; 10/16 = 0.625 */
+
+  @mixin atMedium {
+    font-size: 56.25%; /* 1rem = 9px; 9/16 = 0.625 */
+  }
+
+  @mixin atLarger {
+    font-size: 75%; /* 1rem = 12px; 12/16 = 0.75 */
+  }
+
+
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: $basicDarkColor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $basicDarkColor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+::selection {
+  background-color: $basicDarkColorHovered;
+  color: $basicLightColorHovered;
+}

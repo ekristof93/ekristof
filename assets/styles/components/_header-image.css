@@ -1,0 +1,10 @@
+.header-image {
+    display: block;
+    height: 20rem;
+    object-fit: none;
+
+    &--big {
+      height: 60rem;
+      object-fit: cover;
+    }
+}

@@ -1,0 +1,81 @@
+.comments {
+  padding: 1.6rem;
+  background-color: $white;
+
+  &__title {
+    margin: -1.6rem -1.6rem 0 -1.6rem;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+
+  .comment-body {
+    margin-left: 8rem;
+    margin-top: 3rem;
+
+    .comment-author {
+      position: relative;
+
+      .fn {
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .avatar {
+        max-width: 100%;
+        position: absolute;
+        left: -8rem;
+        border-radius: 3.2rem;
+      }
+
+      .says {
+        display: none;
+      }
+    }
+
+    .comment-meta {
+      font-size: 1rem;
+      color: $basicLightColor;
+    }
+  }
+
+    .children {
+      list-style-type: none;
+    }
+  }
+
+  .icon--reply {
+    height: 1.6rem;
+    width: 1.6rem;
+    fill: $basicDarkColor;
+  }
+
+  &__reply {
+    font-weight: 700;
+    padding-left: .5rem;
+  }
+
+  .comment-form {
+    @mixin clearfix;    
+
+    &-comment label,
+    &-author label,
+    &-email label,
+    &-url label {
+      display: block;
+      font-size: 2rem;
+      color: $basicDarkColor;
+      margin-bottom: .5rem;
+    }
+
+    &-cookies-consent label {
+      margin-left: .5rem;
+    }
+
+    #submit {
+      float: right;
+    }
+  }
+}

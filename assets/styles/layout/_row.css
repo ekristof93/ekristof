@@ -1,0 +1,66 @@
+.row {
+  max-width: $gridWidth;
+  margin: 0 auto;
+  
+  &:not(:last-child) {
+    margin-bottom: $gutterVertical;
+  }
+
+  @mixin atMedium {
+    max-width: 55rem;
+    padding: 0;
+
+    &--wide-medium {
+      max-width: 100%;
+    }
+  }
+  
+  @mixin clearfix;
+  
+  [class^="col-"] {
+    float: left;
+    
+    &:not(:last-child) {
+      margin-right: $gutterHorizontal;
+
+      @mixin atMedium {
+        margin-right: 0;
+        margin-bottom: $gutterVerticalSmall;
+      }
+    
+    }
+
+    @mixin atMedium {
+      width: 100% !important;
+    }
+  }
+
+
+  .col-full {
+    width: 100%;
+  }
+  
+  .col-1-of-2 {
+    width: calc((100% - $gutterHorizontal) / 2);
+  }
+  
+  .col-1-of-3 {
+    width: calc((100% - 2 * $gutterHorizontal) / 3);
+  }
+
+  .col-4-of-12 {
+    width: calc(4 * ((100% - 11 * $gutterHorizontal) / 12) + 3 * $gutterHorizontal);
+  }
+
+  .col-5-of-12 {
+    width: calc(5 * ((100% - 11 * $gutterHorizontal) / 12) + 4 * $gutterHorizontal);
+  }
+
+  .col-8-of-12 {
+    width: calc(8 * ((100% - 11 * $gutterHorizontal) / 12) + 7 * $gutterHorizontal);
+  }
+
+  .col-7-of-12 {
+    width: calc(7 * ((100% - 11 * $gutterHorizontal) / 12) + 6 * $gutterHorizontal);
+  }
+}

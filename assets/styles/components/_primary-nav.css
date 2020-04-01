@@ -1,0 +1,85 @@
+.primary-nav {
+  @mixin clearfix;
+
+    @mixin atMedium {
+      text-align: center;
+    }
+
+  &--pull-right {
+    float: right;
+  }
+
+  &--pull-left {
+    float: left;
+  }
+
+  @mixin atMedium {
+    &--pull-right,
+    &--pull-left {
+      float: none;
+    }
+  }
+
+  &__home {
+    display: inline-block;
+    font-size: 3.2rem;
+    color: $basicLightColor;
+    line-height: 6rem;
+
+    &-e,
+    &:hover {
+      color: $brandColor;
+    }
+
+    @mixin atMedium {
+      display: block;
+      padding: 1.6rem 0;
+    }
+  }
+
+  &__btn {
+    padding: .8rem 0 .8rem 1.6rem;
+
+    @mixin atMedium {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  &__link-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @mixin atMedium {
+      margin: 0 -1.6rem;
+      padding: 1.6rem 0;
+    }
+
+    .menu-item {
+      display: inline-block;
+
+      @mixin atMedium {
+        display: block;
+      }
+
+      a {
+        display: block;
+        font-size: 1.6rem;
+        color: $basicLightColor;
+        line-height: 6rem;
+        padding: 0 1.6rem;
+
+        @mixin atMedium {
+          line-height: normal;
+          padding: 2rem 0;
+        }
+
+        &:hover {
+          color: $brandColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

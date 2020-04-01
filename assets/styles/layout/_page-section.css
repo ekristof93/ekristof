@@ -1,0 +1,24 @@
+.page-section {
+  padding: 10rem 0;
+
+  &--medium-padding {
+    padding: 5rem 0;
+  }
+
+  &--little-padding {
+    padding: 3rem 0;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+
+  &--light {
+    background-color: $basicLightColor;
+  }
+
+  &--dark {
+    background-color: $basicDarkColor;
+    color: $basicLightColor;
+  }
+}

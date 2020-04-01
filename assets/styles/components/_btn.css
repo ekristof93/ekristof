@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1.2rem 2rem;
+  background-color: rgba($basicDarkColor, .5);
+  color: $basicLightColor;
+  border: 1px solid $basicLightColor;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $basicLightColor;
+    color: $basicDarkColor;
+    text-decoration: none;
+  }
+
+  &--light {
+    background-color: $basicLightColor;
+    color: $basicDarkColor;
+    border: 1px solid $basicDarkColor;
+
+    &:hover {
+      background-color: $basicDarkColor;
+      color: $basicLightColor;
+    }
+  }
+
+
+  &--large {
+    padding: 1.8rem 3.5rem;
+    font-size: 2rem;
+  }
+}

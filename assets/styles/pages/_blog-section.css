@@ -1,0 +1,5 @@
+.blog-section {
+    background-image: linear-gradient(rgba($basicDarkColor, .9), rgba($basicDarkColor, .9)), url(assets/images/blog-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}

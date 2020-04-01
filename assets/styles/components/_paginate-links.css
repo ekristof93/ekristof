@@ -1,0 +1,8 @@
+.paginate-links {
+  text-align: center;
+  margin: 2.5rem 0;
+
+  .page-numbers {
+    padding: 0 .5rem;
+  }
+}

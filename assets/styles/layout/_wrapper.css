@@ -1,0 +1,27 @@
+.wrapper {
+  max-width: 114rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--no-padding-on-small {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
+    }
+  }
+
+  &--narrow {
+    max-width: 54.4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,27 @@
+.widget {
+  text-align: center;
+  background-color: $white;
+  margin: 2rem 0;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  ul {
+    padding: 2rem;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1rem 0;
+      border-top: 1px solid $basicLightColor;
+    }
+
+    li:last-child {
+      border-bottom: 1px solid $basicLightColor;
+    }
+  }
+}
